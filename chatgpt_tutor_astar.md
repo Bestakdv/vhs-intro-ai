@@ -3,7 +3,7 @@
 
 
 >code is in notebook
-and explination is The A* algorithm calculates the f(n) value for each node, which is the sum of g(n) and h(n):
+and explanation is The A* algorithm calculates the f(n) value for each node, which is the sum of g(n) and h(n):
 f(n)=g(n)+h(n)
 The node with the smallest f(n) value is selected to explore next. The algorithm continues until it finds the goal node.
 
