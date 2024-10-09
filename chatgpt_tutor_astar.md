@@ -1,5 +1,5 @@
 # ChatGPT as a tutor
-**can you please write the A Star algorithm in python an explain it**
+**can you please write the A Star algorithm in python and explain it using haversine**
 
 
 >code is in notebook
