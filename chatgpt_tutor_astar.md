@@ -10,18 +10,6 @@ f(n)=g(n)+h(n)
 The node with the smallest f(n) value is selected to explore next. The algorithm continues until it finds the goal node.
 >g(n) is the cost from the start node to n and h(n) is the heuristic estimate of the cost from node n to the goal node
 
-**why is my answer always wrong when using haversine is it because my radians are wrong?
-        earthRadius = 6371
-        latitude1, longitude1 = coord1
-        latitude2, longitude2 = coord2
-        radLat1, radLat2 = math.radians(latitude1), math.radians(longitude2)
-        deltaLat = math.radians(latitude2 - latitude1)
-        deltaLon = math.radians(longitude2 - longitude1)
-        #using the haversine math formulas
-        a = math.sin(deltaLat / 2) ** 2 + math.cos(radLat1) * math.cos(radLat2) * math.sin(deltaLon / 2) ** 2
-        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-        #in kilometers
-        return earthRadius * c**
 
 >You assigned radLat2 using longitude2 instead of latitude2.
 Latitude and Longitude Ranges:
