@@ -28,7 +28,7 @@ Latitude and Longitude Ranges:
 Make sure the coordinates you're passing in (i.e., coord1 and coord2) are indeed in degrees, as the conversion to radians is necessary for the trigonometric functions to work correctly
 
 
-**why do you need to use radians for hoversine and not degrees**
+**why do you need to use radians for haversine and not degrees**
 
 >Most programming languages, including Python, define trigonometric functions such as sin(), cos(), and tan() to take input in radians. For instance, in Python’s math module, functions like math.sin() and math.cos() expect the input angle to be in radians.
 
