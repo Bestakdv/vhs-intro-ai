@@ -1,7 +1,7 @@
 # ChatGPT as a tutor
 
 
-**can you please write the A Star algorithm in python and explain it using haversine**
+**can you please write the astar algorithm in python for adjacent lists using haversine and explain astar**
 
 
 >code is in notebook
