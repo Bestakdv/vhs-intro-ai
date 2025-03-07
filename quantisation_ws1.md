@@ -4,20 +4,21 @@ Ref: https://learn.deeplearning.ai/courses/quantization-fundamentals
 Watch `Introduction`, and then answer these questions:
 1. Andrew mentions **PyTorch** library. What is PyTorch? Which library that you
 have used so far in the course is similar to PyTorch?
-[Your answer here]
-2. Andrew also talks about **data types**. What are data types used for? List the
+PyTorch is a library that allows for machine learning and is used for training neural networks.
+A library similar to PyTorch is Keras.
+3. Andrew also talks about **data types**. What are data types used for? List the
 data types that are mentioned in this video.
-[Your answer here]
-3. What is the purpose of this course?
+Data types are used to define a variable and how it can be stored.The datatypes mentioned in the video are float and integers.
+4. What is the purpose of this course?
 Pros and cons of each data type, how to load models with different data types and linear quantization.
 Watch `Handling Big Models`, and then answer these questions:
-4. Why is handling big models a problem for the AI community?
+5. Why is handling big models a problem for the AI community?
 Not everybody has the devices to run AI, so big models arent accessible to everyone.
-5. To solve this problem, the video mentions 2 techniques (not covered in detail)
+6. To solve this problem, the video mentions 2 techniques (not covered in detail)
 apart from quantization. What are they?
 Pruning: removing layers that are not that important in the models decision
 Knowledge Distillation: Training a smaller model (student) using the original model (instructor) and transfering the knowledge
-6. What makes a model "big"? Should we be concerned about where we store the model
+7. What makes a model "big"? Should we be concerned about where we store the model
 or how we run the model? Or both?
 The parameters make a model "big" and we should be concerned where the model is stored as it could be too big to run because of too many
 bytes.
@@ -35,10 +36,14 @@ The formula for the unsigned integer range is [0,2^n -1]
 The formula for signed integer range is [-2^(n-1), 2^(n-1) - 1]
 9. Compute the range for **unsigned int** with 8-bits. Show the steps in your
 calculation.
-[0,255]  [Your answer here]
+Minimum: 0+0+0+0+0+0+0+0 = 0
+Maximum: 2^7 + 2^6 +2^5 + 2^4 + 2^3 + 2^2 + 2^1 + 2^0 = 255
+[0,255]
 10. Compute the range for **signed int** with 8-bits. Show the steps in your
 calculation.
-[-128, 127] [Your answer here]
+Maximum: 0*2^7 + 1*2^6 + 1*2^5 + 1*2^4 + 1*2^3 + 1*2^2 + 1*2^1 + 1*2^0 = 127
+Minimum: -1(0*2^7 + 1*2^6 + 1*2^5 + 1*2^4 + 1*2^3 + 1*2^2 + 1*2^1 + 1*2^0 + 1) = -128
+[-128,127]
 11. Represent the values, 2, 6, 33 and 100 in the 8-bit unsigned int data format.
 2: 00000010
 6: 00000110
@@ -54,7 +59,7 @@ Numbers with decimals
 components that represent the **range** and **precision**.
 The 3 components are sign, exponent(range), and fraction(precision)
 16. What is "floating" in this data type? Explain with an example.
-[Your answer here]
+It refers to how the decimal point can move an example being 5000 as 5*10^3.
 17. Compare FP32, FP16 and BF16 formats in terms of precision and range.
 FP32: Range 8 bits, precision 23 bits (best)
 BF16: Range 8 bits, precision 7 bits (better)
@@ -72,7 +77,7 @@ reduce memory footprint.
 The values get increased/changed after downcasting
 23. Why did the video choose matrix multiplication to check the impact of
 downcasting on the precision of the result?
-[Your answer here]
+The video choose matrix multiplication as its easy to compare and it shows the rounding errors.
 24. One of the advantages of downcasting is reduced memory footprint. How does this
 allow us to enable larger batch sizes? Why is having larger batch sizes beneficial
 to training?
@@ -80,4 +85,4 @@ It allows to train larger batch sizes by reducing the reducing the memory so the
 and it beneficial because it makes training faster
 26. The video mentions a use case of **mixed precision training** with downcasting.
 Why would this work?
-[Your answer here]
+This would work as it would apply lower precision where it improves efficiency and keeping the others in high precision.
