@@ -1,6 +1,6 @@
 Project Overview: The purpose of these projects were to learn about graphs and get an introduction into Data Science.
 
-Technologies Used: These projects were all done in python and some libraries that were used are NumPy, Matplotlib, Seaborn,  
+Technologies Used: These projects were all done in python and some libraries that were used are NumPy, Matplotlib, Seaborn, Math, and Heapq
 
 How to Run: In order to run these projects you need to run them on Google Colab.
 
